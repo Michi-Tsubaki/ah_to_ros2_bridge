@@ -7,6 +7,10 @@ install(DIRECTORY config urdf meshes mjcf sdf
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(FILES MODEL.md
+  DESTINATION share/${PROJECT_NAME}
+)
+
 install(DIRECTORY rviz
   DESTINATION share/${PROJECT_NAME}
   OPTIONAL
