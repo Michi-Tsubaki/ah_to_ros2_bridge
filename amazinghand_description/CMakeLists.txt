@@ -3,7 +3,7 @@ project(amazinghand_description)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY config urdf meshes
+install(DIRECTORY config urdf meshes mjcf sdf
   DESTINATION share/${PROJECT_NAME}
 )
 
