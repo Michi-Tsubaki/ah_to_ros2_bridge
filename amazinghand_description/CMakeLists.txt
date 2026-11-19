@@ -3,9 +3,13 @@ project(amazinghand_description)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY urdf meshes rviz
+install(DIRECTORY config urdf meshes
   DESTINATION share/${PROJECT_NAME}
-  OPTIONAL  # meshes/rviz dirs are optional at scaffold stage
+)
+
+install(DIRECTORY rviz
+  DESTINATION share/${PROJECT_NAME}
+  OPTIONAL
 )
 
 ament_package()
